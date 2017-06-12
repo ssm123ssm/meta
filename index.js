@@ -28,7 +28,7 @@ app.post('/upload', function(req, res) {
     const stats = fs.statSync(path).size;
     console.log(stats);
     res.jsonp({"size": stats});
-    fs.unlink(path);
+    //fs.unlink(path);
   });
     }
 });
